@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Jornada 360 Design System - Cores principais baseadas no ícone */
+    --background: 220 20% 93%; /* #EBEEF2 */
+    --foreground: 220 30% 25%; /* #313E59 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 25%;
+
+    /* Menu/AppBar - Azul do ícone */
+    --primary: 215 85% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Botões - Azul secundário */
+    --secondary: 215 85% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 88%;
+    --muted-foreground: 220 10% 50%;
+
+    /* Ícones - Azul do ícone mais claro */
+    --accent: 215 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 85%;
+    --input: 220 15% 90%;
+    --ring: 250 85% 65%;
+
+    --radius: 0.75rem;
+
+    /* Cores customizadas */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    --info: 220 70% 19%;
+    --info-foreground: 0 0% 100%;
+
+    /* Gradientes */
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 35%), hsl(215 85% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(215 85% 50%), hsl(215 85% 70%));
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 8px hsla(220, 30%, 25%, 0.08);
+    --shadow-md: 0 4px 16px hsla(220, 30%, 25%, 0.12);
+    --shadow-lg: 0 8px 32px hsla(220, 30%, 25%, 0.16);
+    
+    /* Transições */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground font-semibold;
+  }
+}
+
+@layer utilities {
+  .shadow-elegant {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
