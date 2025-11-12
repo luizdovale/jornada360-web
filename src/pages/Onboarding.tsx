@@ -40,7 +40,7 @@ export default function Onboarding() {
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <Card className="w-full max-w-2xl shadow-elegant animate-scale-in">
         <CardHeader className="space-y-2 text-center">
-          <div className="mx-auto w-20 h-20 rounded-lg mb-2 bg-primary p-3 flex items-center justify-center">
+          <div className="mx-auto w-28 h-28 rounded-lg mb-2 bg-primary p-3 flex items-center justify-center">
             <img src={appIcon} alt="Jornada 360" className="w-full h-full object-contain" />
           </div>
           <p className="text-lg text-foreground mb-2">Bem vindo ao Jornada 360</p>
