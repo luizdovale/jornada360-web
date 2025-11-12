@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import appIcon from "../../assets/app-icon.png";
+import appIcon from "@/assets/app-icon.png";
 
 interface SplashScreenProps {
   onComplete: () => void;
