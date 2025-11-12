@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import appIcon from "@/assets/app-icon-splah.png"; // usa seu ícone padrão
+import appIcon from "@/assets/app-icon-splash.png"; // usa seu ícone padrão
 
 interface SplashScreenProps {
   onComplete: () => void;
