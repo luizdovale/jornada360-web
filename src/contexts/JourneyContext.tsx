@@ -26,7 +26,7 @@ const STORAGE_KEYS = {
 const DEFAULT_SETTINGS: AppSettings = {
   jornadaBase: 440, // 7:20
   kmEnabled: false,
-  monthStartDay: 1,
+  monthStartDay: 21,
   escalaPattern: "6x2",
   escalaStartDate: null,
   createdAt: new Date().toISOString(),
