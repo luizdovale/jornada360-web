@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useJourney } from "@/contexts/JourneyContext";
 import { AppSettings } from "@/types/journey";
 import { Clock, Navigation, Calendar } from "lucide-react";
-import appIcon from "@/assets/app-icon2.png";
+import appIcon from "@/assets/app-icon.png";
 
 export default function Onboarding() {
   const navigate = useNavigate();
