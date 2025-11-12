@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useJourney } from "@/contexts/JourneyContext";
 import { AppSettings } from "@/types/journey";
 import { Clock, Navigation, Calendar } from "lucide-react";
-import appIcon from "/app-icon-white-bg.png";
+import appIcon from "@/assets/app-icon2.png";
 
 export default function Onboarding() {
   const navigate = useNavigate();
@@ -41,7 +41,7 @@ export default function Onboarding() {
       <Card className="w-full max-w-2xl shadow-elegant animate-scale-in">
         <CardHeader className="space-y-2 text-center">
           <div className="mx-auto w-20 h-20 rounded-lg mb-2 bg-primary p-3 flex items-center justify-center">
-            <img src={appIcon} alt="Jornada 360" className="w-full h-full object-contain brightness-0 invert" />
+            <img src={appIcon} alt="Jornada 360" className="w-full h-full object-contain" />
           </div>
           <p className="text-lg text-foreground mb-2">Bem vindo ao Jornada 360</p>
           <CardTitle className="text-3xl text-foreground">Configuração Inicial</CardTitle>
